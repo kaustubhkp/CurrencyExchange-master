@@ -1,0 +1,6 @@
+<resources>
+    @SuppressLint("Typos")
+    <string name="app_name">Revolut</string>
+    <string name="euro">Euro</string>
+    <string name="amount">1.00</string>
+</resources>

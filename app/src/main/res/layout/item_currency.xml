@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="contentDescription"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_100"
+    android:gravity="center"
+    android:padding="@dimen/dp_15">
+
+    <ImageView
+        android:id="@+id/img_country_logo"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/text_view_currency_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="start|center"
+        android:layout_toRightOf="@+id/img_country_logo"
+        android:layout_toEndOf="@+id/img_country_logo"
+        android:layout_toLeftOf="@+id/edit_text_currency_amount"
+        android:layout_toStartOf="@+id/edit_text_currency_amount"
+        android:text="@string/euro"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sp_18" />
+
+    <EditText
+        android:id="@+id/edit_text_currency_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:inputType="numberDecimal"
+        android:text="@string/amount" />
+
+</RelativeLayout>
